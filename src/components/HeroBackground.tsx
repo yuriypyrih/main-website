@@ -6,7 +6,7 @@ const HeroBackground: React.FC = () => {
     // @ts-ignore
     <Particles
       width={"100%"}
-      height={"calc(100vh)"}
+      height={"calc(200vh)"}
       id={"tsparticles"}
       options={{
         background: {

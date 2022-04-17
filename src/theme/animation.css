@@ -28,20 +28,20 @@
 /*    animation: animateHeroFrame3 4s alternate  ease-in-out ;*/
 /*}*/
 
-.heroFrameHovered #Code {
+.heroFrameHovered .CodeClass {
     transform-origin: center;
     animation: animateHeroFrame1 5s alternate  ease-in-out ;
     animation-iteration-count: 2;
 }
 
 
-.heroFrameHovered #Screen {
+.heroFrameHovered .ScreenClass {
     transform-origin: center;
     animation: animateHeroFrame2 5s alternate ease-in-out infinite;
     animation-iteration-count: 2;
 }
 
-.heroFrameHovered #Framing {
+.heroFrameHovered .FramingClass {
     transform-origin: center;
     animation: animateHeroFrame3 5s alternate ease-in-out infinite;
     animation-iteration-count: 2;
