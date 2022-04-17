@@ -1,0 +1,105 @@
+
+#heroFrame {
+    perspective: 800px;
+}
+
+
+#heroFrame svg{
+    overflow: visible;
+    transform: rotateY(-30deg);
+
+}
+
+/*#heroFrame:hover #Code {*/
+/*    transform-origin: center;*/
+/*    animation: animateHeroFrame1 4s alternate ease-in-out infinite;*/
+/*}*/
+
+
+/*#heroFrame:hover #Screen {*/
+/*    transform-origin: center;*/
+/*    animation: animateHeroFrame2 4s alternate ease-in-out ;*/
+
+/*}*/
+
+
+/*#heroFrame:hover #Framing {*/
+/*    transform-origin: center;*/
+/*    animation: animateHeroFrame3 4s alternate  ease-in-out ;*/
+/*}*/
+
+.heroFrameHovered #Code {
+    transform-origin: center;
+    animation: animateHeroFrame1 5s alternate  ease-in-out ;
+    animation-iteration-count: 2;
+}
+
+
+.heroFrameHovered #Screen {
+    transform-origin: center;
+    animation: animateHeroFrame2 5s alternate ease-in-out infinite;
+    animation-iteration-count: 2;
+}
+
+.heroFrameHovered #Framing {
+    transform-origin: center;
+    animation: animateHeroFrame3 5s alternate ease-in-out infinite;
+    animation-iteration-count: 2;
+}
+
+
+
+@keyframes animateHeroFrame1 {
+    from {
+        transform: rotateY(0) translate3d(0,0,0);
+    }
+
+    30%{
+        transform: rotateY(-60deg) translate3d(0, 6px, 30px);
+    }
+    45%{
+        transform: rotateY(-60deg) translate3d(0, -6px, 30px);
+    }
+    75%{
+        transform: rotateY(-60deg) translate3d(0, 6px, 30px);
+    }
+    90%{
+        transform:  rotateY(-60deg) translate3d(0, -6px, 30px);
+    }
+    to {
+        transform: rotateY(-60deg) translate3d(0, -6px, 30px);
+    }
+}
+@keyframes animateHeroFrame2 {
+    from {
+        transform: rotateY(0) translate3d(0, 0, 0);
+    }
+
+    30%{
+        transform: rotateY(-60deg) translate3d(0, -10px, -10px);
+    }
+    45%{
+        transform: rotateY(-60deg) translate3d(0, 10px, -10px);
+    }
+    75%{
+        transform: rotateY(-60deg) translate3d(0, -10px, -10px);
+    }
+    90%{
+        transform:  rotateY(-60deg) translate3d(0, 10px, -10px);
+    }
+    to {
+        transform: rotateY(-60deg) translate3d(-20px, -10px, -10px);
+    }
+}
+@keyframes animateHeroFrame3 {
+    from {
+        transform: rotateY(0) translate3d(0,0,0);
+    }
+    30%{
+        transform: rotateY(-60deg) translate3d(60px,0, -10px) ;
+    }
+    to {
+        transform: rotateY(-60deg) translate3d(80px,0,-10px);
+    }
+}
+
