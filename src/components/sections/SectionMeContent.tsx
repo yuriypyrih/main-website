@@ -19,7 +19,7 @@ const SectionMeContent: React.FC = () => {
           sx={{
             background: "white",
             borderRadius: 99,
-            position: "relative",
+            position: "absolute",
             top: "25%",
             left: "5%",
             width: 360,
@@ -34,31 +34,34 @@ const SectionMeContent: React.FC = () => {
             src={"/assets/Me.jpg"}
             style={{ width: 360, height: 360, objectFit: "cover" }}
           />
-
-          {/*<AccountCircleIcon style={{ width: 360, height: 360 }} />*/}
         </Box>
         <Grid
           container
           justifyContent={"flex-end"}
-          // sx={{ textAlign: "right" }}
+          sx={{
+            position: "relative",
+            width: "100%",
+            top: "calc(30vh + 100px)",
+          }}
         >
-          <Grid item xs={6} container>
-            <Grid item xs={12} sx={{ pl: "25%" }}>
+          <Grid item sx={{ maxWidth: "48%", pl: "calc(5vw + 20px)" }} container>
+            <Grid item xs={12}>
               <Typography sx={{ color: "#ffeddf", fontSize: 20 }}>
-                {`Hello! my name is Yuriy Pyrih`}
+                {`Hello, my name is Yuriy Pyrih`}
               </Typography>
             </Grid>
-            <Grid item xs={12} sx={{ pl: "25%" }}>
+            <Grid item xs={12}>
               <Typography sx={{ color: "#ffeddf", fontSize: 20 }}>
-                {`and I am `}
+                {`and I am a `}
                 <span style={{ color: "#2dd5c4" }}>
                   Full Stack Web Developer
                 </span>
+                .
               </Typography>
             </Grid>
-            <Grid item xs={12} sx={{ pl: "20%", mt: "16px" }}>
+            <Grid item xs={12}>
               <Typography sx={{ color: "#ffeddf", fontSize: 18 }}>
-                {`I have a keen eye for Interactive Design as my passion is to bridge the realms of Reality and Imagination`}
+                {`I have a keen eye for Interactive Design as my passion is to bridge the realms of Reality and Imagination!`}
               </Typography>
             </Grid>
           </Grid>

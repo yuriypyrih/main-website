@@ -1,9 +1,11 @@
 import React from "react";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import SectionHeroContent from "../components/sections/SectionHeroContent";
-import { ReactComponent as MeBackground } from "../assets/svg/meSection.svg";
 import DotPager from "../components/DotPager";
 import SectionMeContent from "../components/sections/SectionMeContent";
+import SectionWorkContent from "../components/sections/SectionWorkContent";
+import SectionContactContent from "../components/sections/SectionContactContent";
+import Footer from "../components/sections/Footer";
 
 const HomePage: React.FC = () => {
   return (
@@ -13,6 +15,7 @@ const HomePage: React.FC = () => {
         sx={{
           backgroundColor: "#E0BBE4",
           height: "calc(200vh)",
+          width: "100%",
           position: "relative",
         }}
       >
@@ -30,28 +33,29 @@ const HomePage: React.FC = () => {
           <SectionMeContent />
         </Box>
       </Box>
-
       <Box
         sx={{ backgroundColor: "#1a385e", minHeight: "100vh" }}
         id={"section-myWork"}
       >
-        My Work Section
+        <SectionWorkContent />
       </Box>
       <Box
         sx={{
-          backgroundColor: "#FEC8D8",
-          minHeight: "calc(100vh + 200px) !important",
+          // backgroundColor: "#1a385e",
+          backgroundImage: "linear-gradient(180deg, #1a385e, #115E84)",
+          minHeight: "100vh",
         }}
         id={"section-contact"}
       >
-        Contact Section
-        <Box sx={{ backgroundColor: "white" }}>Footer</Box>
+        <SectionContactContent />
       </Box>
-
+      <Box sx={{ backgroundColor: "blue" }}>
+        <Footer />
+      </Box>
       <Box
         sx={{
           position: "fixed",
-          right: 16,
+          right: 8,
           top: "50%",
           transform: "translateY(-50%)",
         }}

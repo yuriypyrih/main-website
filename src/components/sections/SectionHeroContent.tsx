@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Box, Container, Typography } from "@mui/material";
 import HeroBackground from "../HeroBackground";
-import Header from "../Header";
+import Header from "./Header";
 import { ReactComponent as FrameSvg } from "../../assets/svg/minotr_illustration.svg";
 
 const SectionHeroContent: React.FC = () => {
@@ -27,7 +27,7 @@ const SectionHeroContent: React.FC = () => {
 
   return (
     <>
-      <Box sx={{ position: "absolute" }}>
+      <Box sx={{ position: "absolute", width: "100%" }}>
         <HeroBackground />
       </Box>
       <Header />
@@ -44,7 +44,7 @@ const SectionHeroContent: React.FC = () => {
           sx={{
             position: "absolute",
             left: "10%",
-            top: "10%",
+            top: "5%",
             width: "800px",
           }}
         >
@@ -84,7 +84,7 @@ const SectionHeroContent: React.FC = () => {
           sx={{
             position: "absolute",
             right: "10%",
-            top: "20%",
+            top: "15%",
             width: "40%",
           }}
         >

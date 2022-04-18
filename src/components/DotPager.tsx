@@ -48,29 +48,39 @@ const DotPager: React.FC = () => {
           background: active ? "#2dd5c4" : "#ffeddf",
           boxShadow: "1px 1px 2px #001220",
           borderRadius: 99,
-          cursor: "pointer",
         }}
       />
     );
   };
   return (
-    <Box sx={{ position: "relative", width: 20 }}>
-      <Grid
-        container
-        flexDirection={"column"}
-        spacing={2}
-        alignItems={"center"}
-      >
-        <Grid item onClick={() => handleScrollTo("section-hero")}>
+    <Box sx={{ position: "relative", width: 32 }}>
+      <Grid container flexDirection={"column"} alignItems={"center"}>
+        <Grid
+          item
+          onClick={() => handleScrollTo("section-hero")}
+          sx={{ p: "8px", cursor: "pointer" }}
+        >
           {getDot(selectedDot === 0)}
         </Grid>
-        <Grid item onClick={() => handleScrollTo("section-me")}>
+        <Grid
+          item
+          onClick={() => handleScrollTo("section-me")}
+          sx={{ p: "8px", cursor: "pointer" }}
+        >
           {getDot(selectedDot === 1)}
         </Grid>
-        <Grid item onClick={() => handleScrollTo("section-myWork")}>
+        <Grid
+          item
+          onClick={() => handleScrollTo("section-myWork")}
+          sx={{ p: "8px", cursor: "pointer" }}
+        >
           {getDot(selectedDot === 2)}
         </Grid>
-        <Grid item onClick={() => handleScrollTo("section-contact")}>
+        <Grid
+          item
+          onClick={() => handleScrollTo("section-contact")}
+          sx={{ p: "8px", cursor: "pointer" }}
+        >
           {getDot(selectedDot === 3)}
         </Grid>
       </Grid>

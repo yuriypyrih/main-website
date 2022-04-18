@@ -8,7 +8,7 @@ const Header: React.FC = () => {
         color: "white",
         width: "100%",
         height: "100px",
-        position: "absolute",
+        position: "relative",
         top: 0,
         whiteSpace: "nowrap",
         background:
@@ -19,23 +19,29 @@ const Header: React.FC = () => {
         <Grid
           container
           justifyContent={"space-between"}
-          sx={{ mt: 2 }}
+          sx={{ pt: 2 }}
           wrap={"nowrap"}
         >
           <Grid item container spacing={4}>
             <Grid item>
-              <Typography sx={{ fontSize: 24, color: "#2dd5c4" }}>
+              <Typography
+                sx={{ fontSize: 24, color: "#2dd5c4", cursor: "pointer" }}
+              >
                 Home
               </Typography>
             </Grid>
             <Grid item>
-              <Typography sx={{ fontSize: 24, color: "#ffeddf" }}>
+              <Typography
+                sx={{ fontSize: 24, color: "#ffeddf", cursor: "pointer" }}
+              >
                 Dev Blogs
               </Typography>
             </Grid>
           </Grid>
           <Grid item>
-            <Typography sx={{ fontSize: 24, color: "#ffeddf" }}>
+            <Typography
+              sx={{ fontSize: 24, color: "#ffeddf", cursor: "pointer" }}
+            >
               DODGE PROJECT
             </Typography>
           </Grid>
