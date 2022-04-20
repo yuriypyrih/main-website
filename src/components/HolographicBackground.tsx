@@ -1,13 +1,20 @@
 import React from "react";
 import Particles from "react-tsparticles";
 
-const HeroBackground: React.FC = () => {
+type HolographicBackgroundProps = {
+  height?: string;
+  id?: string;
+};
+const HolographicBackground: React.FC<HolographicBackgroundProps> = ({
+  height = "200vh",
+  id = "tsparticles",
+}) => {
   return (
     // @ts-ignore
     <Particles
       width={"100%"}
-      height={"calc(200vh)"}
-      id={"tsparticles"}
+      height={height}
+      id={id}
       options={{
         background: {
           color: {
@@ -17,7 +24,7 @@ const HeroBackground: React.FC = () => {
         style: {
           position: "relative",
         },
-        fpsLimit: 120,
+        fpsLimit: 60,
         interactivity: {
           events: {
             onClick: {
@@ -34,7 +41,7 @@ const HeroBackground: React.FC = () => {
             bubble: {
               distance: 400,
               duration: 2,
-              opacity: 0.8,
+              // opacity: 0.1,
               size: 40,
             },
             push: {
@@ -74,7 +81,7 @@ const HeroBackground: React.FC = () => {
           number: {
             density: {
               enable: true,
-              // area: 1200,
+              area: 1000,
             },
             value: 80,
           },
@@ -95,4 +102,4 @@ const HeroBackground: React.FC = () => {
   );
 };
 
-export default HeroBackground;
+export default React.memo(HolographicBackground);

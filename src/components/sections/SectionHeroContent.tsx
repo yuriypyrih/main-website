@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Box, Container, Typography } from "@mui/material";
-import HeroBackground from "../HeroBackground";
+import HolographicBackground from "../HolographicBackground";
 import Header from "./Header";
 import { ReactComponent as FrameSvg } from "../../assets/svg/minotr_illustration.svg";
 
@@ -28,7 +28,7 @@ const SectionHeroContent: React.FC = () => {
   return (
     <>
       <Box sx={{ position: "absolute", width: "100%" }}>
-        <HeroBackground />
+        <HolographicBackground />
       </Box>
       <Header />
       <Container

@@ -101,6 +101,18 @@ const SectionWorkContent: React.FC = () => {
                         color: "#2dd5c4",
                       }}
                     >
+                      TECH:
+                    </span>
+                    {" Web Sockets, Ionic, i18n Multi language support"}
+                  </Typography>
+                </Grid>
+                <Grid item xs={12}>
+                  <Typography sx={{ color: "#ffeddf", fontSize: 18 }}>
+                    <span
+                      style={{
+                        color: "#2dd5c4",
+                      }}
+                    >
                       OTHERS:
                     </span>
                     {" GDPR Proficiency, Excellent Planner, Good Communicator"}

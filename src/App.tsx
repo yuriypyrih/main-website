@@ -1,12 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css";
 import "./theme/animation.css";
 import AppRoutes from "./routes/Routes";
 
 function App() {
-  useEffect(() => {}, []);
   return (
-    <div className="App">
+    <div className="App" style={{ background: "#001220" }}>
       <AppRoutes />
     </div>
   );

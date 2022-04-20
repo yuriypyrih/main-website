@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Box } from "@mui/material";
 import SectionHeroContent from "../components/sections/SectionHeroContent";
 import DotPager from "../components/DotPager";
@@ -8,6 +8,10 @@ import SectionContactContent from "../components/sections/SectionContactContent"
 import Footer from "../components/sections/Footer";
 
 const HomePage: React.FC = () => {
+  console.log("but why");
+  useEffect(() => {
+    console.log("Testing Home");
+  }, []);
   return (
     <Box>
       <Box

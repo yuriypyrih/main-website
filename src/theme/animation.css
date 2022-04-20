@@ -103,3 +103,30 @@
     }
 }
 
+/* width */
+body *::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+/* Track */
+body *::-webkit-scrollbar-track {
+    background: #001220;
+}
+
+/* Handle */
+body *::-webkit-scrollbar-thumb {
+    background: #2dd5c4;
+    border-radius: 99px !important;
+
+}
+
+/* Handle on hover */
+body *::-webkit-scrollbar-track:hover {
+    background: #001220;
+}
+
+.richContentClass p {
+    font-size:18px;
+}
+
