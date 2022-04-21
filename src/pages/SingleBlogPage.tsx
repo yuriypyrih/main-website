@@ -7,8 +7,8 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import Header from "../components/sections/Header";
-import Footer from "../components/sections/Footer";
+import Header from "../components/structure/Header";
+import Footer from "../components/structure/Footer";
 import BlogPost from "../components/BlogPost";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../redux/store";
@@ -27,7 +27,7 @@ const SingleBlogPage: React.FC = () => {
     if (!selectedBlog && params.id) {
       dispatch(getSingleBlog({ id: params.id }));
     }
-  }, [dispatch]);
+  }, [dispatch, params.id]);
 
   const getTitle = () => {
     if (selectedBlog && selectedBlog.fields?.title) {

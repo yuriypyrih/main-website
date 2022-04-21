@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Box, Container, Typography } from "@mui/material";
 import HolographicBackground from "../HolographicBackground";
-import Header from "./Header";
+import Header from "../structure/Header";
 import { ReactComponent as FrameSvg } from "../../assets/svg/minotr_illustration.svg";
 
 const SectionHeroContent: React.FC = () => {

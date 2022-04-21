@@ -1,17 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Box } from "@mui/material";
-import SectionHeroContent from "../components/sections/SectionHeroContent";
+import SectionHeroContent from "../components/homeSections/SectionHeroContent";
 import DotPager from "../components/DotPager";
-import SectionMeContent from "../components/sections/SectionMeContent";
-import SectionWorkContent from "../components/sections/SectionWorkContent";
-import SectionContactContent from "../components/sections/SectionContactContent";
-import Footer from "../components/sections/Footer";
+import SectionMeContent from "../components/homeSections/SectionMeContent";
+import SectionWorkContent from "../components/homeSections/SectionWorkContent";
+import SectionContactContent from "../components/homeSections/SectionContactContent";
+import Footer from "../components/structure/Footer";
 
 const HomePage: React.FC = () => {
-  console.log("but why");
-  useEffect(() => {
-    console.log("Testing Home");
-  }, []);
   return (
     <Box>
       <Box

@@ -30,7 +30,7 @@ const SectionMeContent: React.FC = () => {
           }}
         >
           <img
-            alt={"my-photo"}
+            alt={"me"}
             src={"/assets/Me.jpg"}
             style={{ width: 360, height: 360, objectFit: "cover" }}
           />

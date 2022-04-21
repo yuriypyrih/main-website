@@ -22,8 +22,6 @@ const DotPager: React.FC = () => {
     } else {
       setSelectedDot(0);
     }
-
-    // console.log(sectionMyWork?.offsetTop, position);
   };
 
   const handleScrollTo = (id: string) => {
