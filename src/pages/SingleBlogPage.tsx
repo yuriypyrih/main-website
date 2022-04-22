@@ -14,6 +14,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "../redux/store";
 import { useNavigate, useParams } from "react-router-dom";
 import { getSingleBlog } from "../redux/slices/appSlice";
+import DogeAd from "../components/DogeAd";
 
 const SingleBlogPage: React.FC = () => {
   const theme = useTheme();
@@ -91,15 +92,8 @@ const SingleBlogPage: React.FC = () => {
                 </Grid>
               </Grid>
               {!breakpointDown && (
-                <Grid item sx={{ ml: 4 }}>
-                  <Box
-                    sx={{
-                      width: 260,
-                      height: 600,
-                      background: "grey",
-                      borderRadius: "8px",
-                    }}
-                  />
+                <Grid item sx={{ pl: 4, position: "sticky", top: 0 }}>
+                  <DogeAd />
                 </Grid>
               )}
             </Grid>

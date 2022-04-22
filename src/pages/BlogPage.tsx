@@ -15,6 +15,7 @@ import { getBlogs } from "../redux/slices/appSlice";
 import { RootState } from "../redux/store";
 import CustomSearchbar from "../components/common/CustomSearchbar";
 import { useDebounce } from "../hooks/useDebounce";
+import DogeAd from "../components/DogeAd";
 
 enum TABS {
   ALL = "all",
@@ -158,15 +159,8 @@ const BlogPage: React.FC = () => {
                 </Grid>
               </Grid>
               {!breakpointDown && (
-                <Grid item sx={{ ml: 4 }}>
-                  <Box
-                    sx={{
-                      width: 260,
-                      height: 600,
-                      background: "grey",
-                      borderRadius: "8px",
-                    }}
-                  />
+                <Grid item sx={{ pl: 4, position: "sticky", top: 0 }}>
+                  <DogeAd />
                 </Grid>
               )}
             </Grid>

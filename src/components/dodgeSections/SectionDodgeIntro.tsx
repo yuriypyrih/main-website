@@ -31,9 +31,9 @@ const SectionDodgeIntro: React.FC = () => {
             <Typography
               sx={{ color: "white", fontSize: 18, textAlign: "center" }}
             >
-              {`So this is the Dodge Project So this is the Dodge Project So this is the
-                     Dodge Project So this is the sdasd saadsa dasdsad asdsad jdks jksjdks 
-                      dksd Dodge Project So this is the Dodge Project`}
+              {`The Dodge is a passion project of mine which I was brewing for a while now.
+                 It was an old Java experimentation that got completely rebooted using modern Web Stack
+                 Technologies such as TypeScript and much more!`}
             </Typography>
           </Grid>
           <Grid item xs={12} container justifyContent={"center"} sx={{ mt: 3 }}>

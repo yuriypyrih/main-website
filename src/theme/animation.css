@@ -103,3 +103,38 @@
     }
 }
 
+
+.disclaimerTrain {
+    position: relative;
+    left: 0;
+    animation: disclaimerTrainAnimation 8s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+@keyframes disclaimerTrainAnimation {
+    from {
+        left: 0;
+    }
+    to {
+        left: -550px;
+    }
+}
+
+.disclaimerTrainFandom {
+    position: relative;
+    left: 0;
+    animation: disclaimerTrainFandomAnimation 8s ease-in-out infinite ;
+    animation-delay: 1s;
+}
+
+
+@keyframes disclaimerTrainFandomAnimation {
+    from {
+        left: 0;
+    }
+    to {
+        left: -550px;
+    }
+}
+
+

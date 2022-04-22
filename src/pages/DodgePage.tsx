@@ -3,6 +3,9 @@ import { Box } from "@mui/material";
 import Header from "../components/structure/Header";
 import Footer from "../components/structure/Footer";
 import SectionDodgeIntro from "../components/dodgeSections/SectionDodgeIntro";
+import SectionDodgeOverview from "../components/dodgeSections/SectionDodgeOverview";
+import SectionDodgeClosure from "../components/dodgeSections/SectionDodgeClosure";
+import SectionDodgeSpecs from "../components/dodgeSections/SectionDodgeSpecs";
 
 const DodgePage: React.FC = () => {
   return (
@@ -19,6 +22,9 @@ const DodgePage: React.FC = () => {
         }}
       >
         <SectionDodgeIntro />
+        <SectionDodgeOverview />
+        <SectionDodgeSpecs />
+        <SectionDodgeClosure />
         <Footer />
       </Box>
     </Box>
