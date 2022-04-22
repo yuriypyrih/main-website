@@ -73,7 +73,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ mini = false, blog, assets }) => {
         }}
       >
         <img
-          src={blogURL || "/assets/me.jpg"}
+          src={blogURL || "/assets/defaultPost.png"}
           alt="blog post"
           onClick={handleClickReadMore}
           style={{

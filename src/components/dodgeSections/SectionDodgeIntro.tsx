@@ -9,8 +9,16 @@ import {
 } from "@mui/material";
 import ReactPlayer from "react-player";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import animateScrollTo from "animated-scroll-to";
 
 const SectionDodgeIntro: React.FC = () => {
+  const handleScrollTo = () => {
+    const element = document.getElementById("section-dodge-overview");
+    const containerElement = document.getElementById("dodge-page");
+    if (element && containerElement)
+      animateScrollTo(element, { elementToScroll: containerElement });
+  };
+
   return (
     <Box
       sx={{
@@ -64,7 +72,20 @@ const SectionDodgeIntro: React.FC = () => {
             </Grid>
           </Grid>
           <Grid item xs={12} container justifyContent={"center"} sx={{ mt: 3 }}>
-            <Button sx={{ p: 2, border: "2px solid grey" }}>Play Game</Button>
+            <Button
+              sx={{
+                boxShadow: "0 0 5px #2dd5c4",
+                borderRadius: "99px",
+                padding: "8px 16px",
+              }}
+              onClick={() =>
+                window.open("https://dodge-game-yuriy.netlify.app", "_blank")
+              }
+            >
+              <Typography sx={{ color: "white", fontSize: 18 }}>
+                PLAY GAME
+              </Typography>
+            </Button>
           </Grid>
           <Grid item xs={12} container sx={{ mt: 5 }}>
             <Grid item xs={12}>
@@ -74,8 +95,14 @@ const SectionDodgeIntro: React.FC = () => {
                 {`Or Scroll Down to learn more`}
               </Typography>
             </Grid>
-            <Grid item xs={12} container justifyContent={"center"}>
-              <IconButton>
+            <Grid
+              item
+              xs={12}
+              container
+              justifyContent={"center"}
+              sx={{ mt: -1 }}
+            >
+              <IconButton onClick={handleScrollTo}>
                 <ExpandMoreIcon
                   sx={{ width: "40px", height: "40px", color: "white" }}
                 />

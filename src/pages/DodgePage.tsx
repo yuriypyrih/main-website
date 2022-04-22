@@ -20,6 +20,7 @@ const DodgePage: React.FC = () => {
           background: "linear-gradient(180deg, #001220, #115E84)",
           overflow: "auto",
         }}
+        id={"dodge-page"}
       >
         <SectionDodgeIntro />
         <SectionDodgeOverview />

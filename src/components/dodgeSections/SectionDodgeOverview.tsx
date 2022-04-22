@@ -10,6 +10,7 @@ const SectionDodgeOverview: React.FC = () => {
         flexDirection: "column",
         justifyContent: "center",
       }}
+      id={"section-dodge-overview"}
     >
       <Container
         maxWidth={"lg"}
@@ -20,6 +21,7 @@ const SectionDodgeOverview: React.FC = () => {
         <Grid container spacing={2}>
           <Grid
             container
+            item
             xs={6}
             flexDirection={"column"}
             justifyContent={"space-between"}
@@ -91,7 +93,7 @@ const SectionDodgeOverview: React.FC = () => {
               </Typography>
             </Grid>
           </Grid>
-          <Grid container xs={6}>
+          <Grid container xs={6} item>
             <Box
               sx={{
                 width: "100%",

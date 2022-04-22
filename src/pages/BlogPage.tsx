@@ -165,6 +165,29 @@ const BlogPage: React.FC = () => {
               )}
             </Grid>
           </Container>
+          <Box
+            sx={{
+              width: "100%",
+              height: "100vh",
+              position: "relative",
+              backgroundColor: "#001220",
+            }}
+          >
+            <Grid
+              container
+              alignItems={"center"}
+              justifyContent={"center"}
+              sx={{ height: "100%" }}
+            >
+              <Typography
+                sx={{
+                  fontSize: 200,
+                  color: "#2dd5c4",
+                  textShadow: "0 0 20px #2dd5c4",
+                }}
+              >{`</>`}</Typography>
+            </Grid>
+          </Box>
         </Box>
         <Footer />
       </Box>
