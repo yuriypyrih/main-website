@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 903 502">
+  <defs>
+    <style>
+      .uuid-111e0c25-fe81-42e5-8a52-3bf888bc1b9f {
+        fill: #00afa3;
+      }
+
+      .uuid-111e0c25-fe81-42e5-8a52-3bf888bc1b9f, .uuid-d1ce1ef9-a39a-4cec-b306-1f0a52f263a4, .uuid-645cfe37-1b04-4cf0-a1f3-b87e08b89a4a, .uuid-af7f3821-3dec-497d-ac29-5570ef19c6e6, .uuid-acfe338d-c9c5-4e50-bd5f-fe7e89bf774c {
+        stroke-miterlimit: 10;
+      }
+
+      .uuid-111e0c25-fe81-42e5-8a52-3bf888bc1b9f, .uuid-645cfe37-1b04-4cf0-a1f3-b87e08b89a4a, .uuid-acfe338d-c9c5-4e50-bd5f-fe7e89bf774c {
+        stroke: #2dd5c4;
+        stroke-width: 3px;
+      }
+
+      .uuid-d40838f3-4dd3-4c8f-bfcb-f4b103795027 {
+        fill: url(#uuid-8904ae2c-38cb-441e-830c-c344506c6bf0);
+      }
+
+      .uuid-d0e5b2b7-23d7-484d-9d36-bb7065676c6b, .uuid-01acdbee-fc0b-41eb-a08d-4a72d7789d50, .uuid-5eff8b81-0cc0-46a6-b8cc-661338974faa {
+        fill: #fff;
+      }
+
+      .uuid-01acdbee-fc0b-41eb-a08d-4a72d7789d50 {
+        font-size: 38.3px;
+      }
+
+      .uuid-01acdbee-fc0b-41eb-a08d-4a72d7789d50, .uuid-5eff8b81-0cc0-46a6-b8cc-661338974faa {
+        font-family: MyriadPro-Regular, Myriad Pro;
+      }
+
+      .uuid-98afe93a-c51c-430d-a25d-82b886581bf2 {
+        letter-spacing: -.03em;
+      }
+
+      .uuid-d1ce1ef9-a39a-4cec-b306-1f0a52f263a4 {
+        stroke: #fff;
+      }
+
+      .uuid-d1ce1ef9-a39a-4cec-b306-1f0a52f263a4, .uuid-645cfe37-1b04-4cf0-a1f3-b87e08b89a4a, .uuid-af7f3821-3dec-497d-ac29-5570ef19c6e6 {
+        fill: none;
+      }
+
+      .uuid-e821ead5-7501-4ee7-b4c1-2372f93658a5 {
+        fill: #1a1a1d;
+      }
+
+      .uuid-5eff8b81-0cc0-46a6-b8cc-661338974faa {
+        font-size: 23.89px;
+      }
+
+      .uuid-3ddafc63-db6e-430a-bf66-36dc30536237 {
+        letter-spacing: -.08em;
+      }
+
+      .uuid-d3ecefa8-0209-4619-8bfe-780a0f072f78 {
+        fill: #989898;
+      }
+
+      .uuid-d3ecefa8-0209-4619-8bfe-780a0f072f78, .uuid-ca7c44c2-d7ea-48ed-a088-bd6baf54b225 {
+        opacity: .15;
+      }
+
+      .uuid-c7a032e6-1030-44e8-9d0c-2ba3e47d55cb {
+        fill: #ffc;
+      }
+
+      .uuid-af7f3821-3dec-497d-ac29-5570ef19c6e6 {
+        stroke: url(#uuid-fbc9a932-3c9a-4c06-805a-9079ebd53906);
+        stroke-width: 36px;
+      }
+
+      .uuid-4feb4475-8000-4858-9bf9-b2663d66c9b7 {
+        fill: url(#uuid-412e747d-802e-4336-a196-53c2729b7ead);
+      }
+
+      .uuid-4fa2ae74-c9ca-411c-996d-0492fffd7269 {
+        fill: url(#uuid-b8af03f2-0649-4b3a-8814-7e8a8d54db8d);
+      }
+
+      .uuid-54ee74bd-2f4b-49d1-a094-a45f015d6120 {
+        fill: url(#uuid-6fcdf666-4cfa-4d09-b91e-edd3eb886f56);
+      }
+
+      .uuid-528c0d36-3e9a-4f98-b5b9-d0cbb9df572d {
+        fill: #ec5151;
+      }
+
+      .uuid-ae829790-1ae5-4ab9-95ba-6668c8f55311 {
+        fill: url(#uuid-be97b881-bb26-4675-9895-60699f7c373f);
+      }
+
+      .uuid-ca7c44c2-d7ea-48ed-a088-bd6baf54b225 {
+        fill: #c6c6c6;
+      }
+
+      .uuid-2d64f9ba-bed9-4c39-b01d-5bb7dd281a4a {
+        fill: url(#uuid-bf317048-a056-4ab6-9824-4a2d7a0c33f2);
+      }
+
+      .uuid-92e756ed-68d1-4374-9613-c79fc5555e48 {
+        fill: #2dd5c4;
+      }
+
+      .uuid-acfe338d-c9c5-4e50-bd5f-fe7e89bf774c {
+        fill: #2b2b2c;
+      }
+    </style>
+    <linearGradient id="uuid-be97b881-bb26-4675-9895-60699f7c373f" x1="45" y1="33.5" x2="176" y2="33.5" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#ffc"/>
+    </linearGradient>
+    <linearGradient id="uuid-fbc9a932-3c9a-4c06-805a-9079ebd53906" x1="487.16" y1="175.93" x2="588.81" y2="277.59" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".34" stop-color="#fff" stop-opacity="0"/>
+      <stop offset=".48" stop-color="#fff" stop-opacity=".04"/>
+      <stop offset=".58" stop-color="#fff" stop-opacity=".08"/>
+      <stop offset=".66" stop-color="#fff" stop-opacity=".15"/>
+      <stop offset=".73" stop-color="#fff" stop-opacity=".24"/>
+      <stop offset=".79" stop-color="#fff" stop-opacity=".35"/>
+      <stop offset=".85" stop-color="#fff" stop-opacity=".48"/>
+      <stop offset=".9" stop-color="#fff" stop-opacity=".63"/>
+      <stop offset=".95" stop-color="#fff" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="uuid-412e747d-802e-4336-a196-53c2729b7ead" x1="595.29" y1="150.48" x2="767.68" y2="150.48" gradientTransform="translate(92.56 -415.23) rotate(29.27) scale(1.27 1.11) skewX(-16.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ec5151"/>
+      <stop offset=".99" stop-color="#ec5151" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="uuid-bf317048-a056-4ab6-9824-4a2d7a0c33f2" x1="2.96" y1="215.04" x2="109.32" y2="215.04" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ec5151" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#ec5151"/>
+    </linearGradient>
+    <linearGradient id="uuid-6fcdf666-4cfa-4d09-b91e-edd3eb886f56" x1="567.03" y1="289.23" x2="421.28" y2="312.23" gradientTransform="translate(562.71) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ec5151" stop-opacity=".5"/>
+      <stop offset=".99" stop-color="#ec5151" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="uuid-8904ae2c-38cb-441e-830c-c344506c6bf0" x1="536.63" y1="328.36" x2="642.99" y2="328.36" gradientTransform="translate(1436.67 743.73) rotate(-180)" xlink:href="#uuid-bf317048-a056-4ab6-9824-4a2d7a0c33f2"/>
+    <linearGradient id="uuid-b8af03f2-0649-4b3a-8814-7e8a8d54db8d" x1="33.37" y1="402.55" x2="-112.39" y2="425.54" gradientTransform="translate(873.95 743.73) scale(1 -1)" xlink:href="#uuid-6fcdf666-4cfa-4d09-b91e-edd3eb886f56"/>
+  </defs>
+  <g id="uuid-d1df279f-952a-44db-bfe4-dab127c511f5" class="overviewDodgeBackground">
+    <rect x="1.5" y="1" width="900" height="500" rx="3.98" ry="3.98" style="fill: #1a1a1d;"/>
+  </g>
+  <g id="uuid-cc331348-24b8-4d16-acc1-ab3b090b0038" class="overviewDodgeHud">
+    <g>
+      <path d="M176,26H47.29c-.35-2.12-1.15-4.08-2.29-5.79v-1.21h124c3.87,0,7,3.13,7,7Z" style="fill: #2dd5c4;"/>
+      <rect x="1.5" y="1.5" width="900" height="499" rx="3.73" ry="3.73" style="fill: none; stroke: #2dd5c4; stroke-miterlimit: 10; stroke-width: 3px;"/>
+      <circle cx="28.5" cy="28.5" r="15" style="fill: none; stroke: #fff; stroke-miterlimit: 10;"/>
+      <path d="M176,30H47.29c-.35,2.12-1.15,4.08-2.29,5.79v1.21h124c3.87,0,7-3.13,7-7Z" style="fill: url(#uuid-be97b881-bb26-4675-9895-60699f7c373f);"/>
+      <rect x="54.16" y="38.5" width="3.21" height="3.21" rx=".65" ry=".65" transform="translate(44.69 -27.68) rotate(45)" style="fill: #ffc;"/>
+      <rect x="48.16" y="38.5" width="3.21" height="3.21" rx=".65" ry=".65" transform="translate(42.93 -23.44) rotate(45)" style="fill: #ffc;"/>
+      <rect x="60.16" y="38.5" width="3.21" height="3.21" rx=".65" ry=".65" transform="translate(46.45 -31.93) rotate(45)" style="fill: #ffc;"/>
+      <path d="M28.5,24.97s-4.74-9.03-9.62,0,8.11,9.69,9.12,12.03c1.5,3.5,.5-12.03,.5-12.03Z" style="fill: #fff;"/>
+      <path d="M28.08,25.07s4.74-9.03,9.62,0-8.11,9.69-9.12,12.03c-1.5,3.5-.5-12.03-.5-12.03Z" style="fill: #fff;"/>
+    </g>
+  </g>
+  <g id="uuid-0265876c-448e-494b-95c8-14543aa5d384" class="overviewDodgeGame">
+    <g>
+      <rect x="558.46" y="264.03" width="36" height="36" style="fill: #fff;"/>
+      <path d="M579.67,281.59s-83.32-54.81-64.86-110.57" style="fill: none; stroke: url(#uuid-fbc9a932-3c9a-4c06-805a-9079ebd53906); stroke-miterlimit: 10; stroke-width: 36px;"/>
+      <rect x="582.46" y="209.03" width="23" height="23" style="fill: #ec5151;"/>
+      <rect x="566.8" y="118.52" width="294.83" height="12.34" transform="translate(76.02 468.72) rotate(-38.23)" style="fill: url(#uuid-412e747d-802e-4336-a196-53c2729b7ead);"/>
+      <rect x="98.46" y="157.03" width="23" height="23" transform="translate(219.92 337.06) rotate(180)" style="fill: #ec5151;"/>
+      <polygon points="109.32 177.99 2.96 261.78 2.96 246.08 101.69 168.3 109.32 177.99" style="fill: url(#uuid-bf317048-a056-4ab6-9824-4a2d7a0c33f2);"/>
+      <polygon points="2.96 243.08 2.96 258.78 128.2 357.44 135.83 347.75 2.96 243.08" style="fill: url(#uuid-6fcdf666-4cfa-4d09-b91e-edd3eb886f56);"/>
+      <rect x="781.54" y="450.38" width="23" height="23" style="fill: #ec5151;"/>
+      <polygon points="793.68 452.42 900.04 368.63 900.04 384.33 801.31 462.11 793.68 452.42" style="fill: url(#uuid-8904ae2c-38cb-441e-830c-c344506c6bf0);"/>
+      <polygon points="900.04 387.33 900.04 371.63 774.8 272.97 767.17 282.66 900.04 387.33" style="fill: url(#uuid-b8af03f2-0649-4b3a-8814-7e8a8d54db8d);"/>
+    </g>
+  </g>
+  <g id="uuid-55fc8ac2-77e3-4ce9-ba33-c3cebfc291a2" class="overviewDodgeOverlay">
+    <g>
+      <rect x="3.5" y="2.5" width="896" height="495" rx="4.31" ry="4.31" style="fill: #989898; opacity: .15;"/>
+      <polygon points="491.5 4.5 238.48 499.5 31.5 499.5 273.5 4.5 491.5 4.5" style="fill: #c6c6c6; opacity: .15;"/>
+      <polygon points="888.5 4.5 635.48 499.5 428.5 499.5 670.5 4.5 888.5 4.5" style="fill: #c6c6c6; opacity: .15;"/>
+    </g>
+  </g>
+  <g id="uuid-c2b5a241-c38c-4e88-a7a7-9b6d424bafc0" class="overviewDodgePause">
+    <g>
+      <rect x="301.77" y="161" width="298" height="180" rx="7.62" ry="7.62" style="fill: #2b2b2c; stroke: #2dd5c4; stroke-miterlimit: 10; stroke-width: 3px;"/>
+      <text transform="translate(387 220.77)" style="fill: #fff; font-family: MyriadPro-Regular, Myriad Pro; font-size: 38.3px;"><tspan x="0" y="0" style="letter-spacing: -.08em;">P</tspan><tspan x="17.16" y="0" style="letter-spacing: -.03em;">A</tspan><tspan x="39.53" y="0">USED</tspan></text>
+      <rect x="381.98" y="245.21" width="137.59" height="58" rx="29" ry="29" style="fill: #00afa3; stroke: #2dd5c4; stroke-miterlimit: 10; stroke-width: 3px;"/>
+      <text transform="translate(407.48 281.62)" style="fill: #fff; font-family: MyriadPro-Regular, Myriad Pro; font-size: 23.89px;"><tspan x="0" y="0">RESUME</tspan></text>
+    </g>
+  </g>
+</svg>

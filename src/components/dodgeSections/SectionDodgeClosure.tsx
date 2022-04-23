@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
+import { ReactComponent as DodgeClosureSvg } from "../../assets/svg/closure-dodge.svg";
 
 const SectionDodgeClosure: React.FC = () => {
   return (
@@ -38,15 +39,11 @@ const SectionDodgeClosure: React.FC = () => {
           </Grid>
         </Grid>
         <Grid container justifyContent={"center"}>
-          <Grid item sx={{ maxWidth: "700px", flex: 1, mt: 4, mb: "200px" }}>
-            <Box
-              sx={{
-                width: "100%",
-                height: "400px",
-                background: "grey",
-                borderRadius: "8px",
-              }}
-            />
+          <Grid
+            item
+            sx={{ maxWidth: "700px", flex: 1, mt: "100px", mb: "200px" }}
+          >
+            <DodgeClosureSvg />
           </Grid>
         </Grid>
       </Container>

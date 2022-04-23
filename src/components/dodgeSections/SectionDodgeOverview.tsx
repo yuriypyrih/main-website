@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
+import { ReactComponent as OverviewSvg } from "../../assets/svg/overview-dodge.svg";
 
 const SectionDodgeOverview: React.FC = () => {
+  const [overviewHovered, setOverviewHovered] = useState<boolean>(false);
+
   return (
     <Box
       sx={{
@@ -10,6 +13,7 @@ const SectionDodgeOverview: React.FC = () => {
         flexDirection: "column",
         justifyContent: "center",
       }}
+      onMouseEnter={() => setOverviewHovered(true)}
       id={"section-dodge-overview"}
     >
       <Container
@@ -54,6 +58,10 @@ const SectionDodgeOverview: React.FC = () => {
                   {`ReactJs, Redux (RTK), Material-UI, Axios.`}
                 </Typography>
                 <Typography sx={{ fontSize: 18, color: "white" }}>
+                  <span style={{ color: "#2dd5c4" }}>{"Design: "}</span>
+                  {`Adobe XD, Illustrator and the power of CSS animations.`}
+                </Typography>
+                <Typography sx={{ fontSize: 18, color: "white" }}>
                   <span style={{ color: "#2dd5c4" }}>{"Back End: "}</span>
                   {`NodeJs (ExpressJS), MongoDB, JWT Authentication.`}
                 </Typography>
@@ -95,13 +103,16 @@ const SectionDodgeOverview: React.FC = () => {
           </Grid>
           <Grid container xs={6} item>
             <Box
+              id={"overviewFrame"}
               sx={{
+                position: "relative",
                 width: "100%",
-                height: "400px",
-                background: "grey",
-                borderRadius: 8,
               }}
-            />
+            >
+              <OverviewSvg
+                className={overviewHovered ? "overviewHovered" : undefined}
+              />
+            </Box>
           </Grid>
         </Grid>
       </Container>

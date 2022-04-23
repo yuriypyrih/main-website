@@ -7,7 +7,6 @@
 #heroFrame svg{
     overflow: visible;
     transform: rotateY(-30deg);
-
 }
 
 /*#heroFrame:hover #Code {*/
@@ -107,8 +106,8 @@
 .disclaimerTrain {
     position: relative;
     left: 0;
-    animation: disclaimerTrainAnimation 8s ease-in-out infinite;
-    animation-delay: 1s;
+    animation: disclaimerTrainAnimation 8s linear infinite;
+    animation-delay: 2s;
 }
 
 @keyframes disclaimerTrainAnimation {
@@ -123,8 +122,8 @@
 .disclaimerTrainFandom {
     position: relative;
     left: 0;
-    animation: disclaimerTrainFandomAnimation 8s ease-in-out infinite ;
-    animation-delay: 1s;
+    animation: disclaimerTrainFandomAnimation 8s linear infinite ;
+    animation-delay: 2s;
 }
 
 
@@ -136,5 +135,130 @@
         left: -550px;
     }
 }
+
+/*overviewDodgeBackground*/
+/*overviewDodgeHud*/
+/*overviewDodgeGame*/
+/*overviewDodgeOverlay*/
+/*overviewDodgePause*/
+
+#overviewFrame svg{
+    perspective: 2000px;
+}
+
+#overviewFrame svg{
+    overflow: visible;
+}
+
+#overviewFrame .overviewHovered .overviewDodgeBackground {
+    transform-origin: center;
+    animation: overviewDodgeBackgroundAnimation 12s alternate ease-in-out infinite ;
+    animation-delay: 0.6s;
+}
+
+#overviewFrame .overviewHovered .overviewDodgeHud {
+    transform-origin: center;
+    animation: overviewDodgeHudAnimation 12s alternate ease-in-out infinite ;
+    animation-delay: 0.6s;
+}
+
+#overviewFrame .overviewHovered .overviewDodgeGame {
+    transform-origin: center;
+    animation: overviewDodgeGameAnimation 12s alternate ease-in-out infinite ;
+    animation-delay: 0.6s;
+}
+
+#overviewFrame .overviewHovered .overviewDodgeOverlay {
+    transform-origin: center;
+    animation: overviewDodgeOverlayAnimation 12s alternate ease-in-out infinite ;
+    animation-delay: 0.6s;
+}
+
+#overviewFrame .overviewHovered .overviewDodgePause {
+    transform-origin: center;
+    animation: overviewDodgePauseAnimation 12s alternate ease-in-out infinite ;
+    animation-delay: 0.6s;
+}
+
+
+@keyframes overviewDodgeBackgroundAnimation {
+    from {
+        transform: rotateY(0) translate3d(0,0,0);
+    }
+    10% {
+        transform: rotateY(-45deg) translate3d(10px,0,0);
+    }
+    40% {
+        transform: rotateY(-60deg) translate3d(0,0,-180px);
+    }
+    to {
+        transform: rotateY(-60deg) translate3d(0,0,-200px);
+    }
+}
+
+
+@keyframes overviewDodgeHudAnimation {
+    from {
+        transform: rotateY(0) translate3d(0,0,0);
+    }
+    10% {
+        transform: rotateY(-45deg) translate3d(5px,0,0);
+    }
+    40% {
+        transform: rotateY(-60deg) translate3d(0,0,0);
+    }
+    to {
+        transform: rotateY(-60deg) translate3d(0,0,0);
+    }
+}
+
+@keyframes overviewDodgeGameAnimation {
+    from {
+        transform: rotateY(0) translate3d(0,0,0);
+    }
+    10% {
+        transform: rotateY(-45deg) translate3d(0,0,0);
+    }
+    40% {
+        transform: rotateY(-60deg) translate3d(0,0,80px);
+    }
+    to {
+        transform: rotateY(-60deg) translate3d(0,0,100px);
+    }
+}
+
+
+@keyframes overviewDodgeOverlayAnimation {
+    from {
+        transform: rotateY(0) translate3d(0,0,0);
+    }
+    10% {
+        transform: rotateY(-45deg) translate3d(0,0,0);
+    }
+    40% {
+        transform: rotateY(-60deg) translate3d(0,0,180px);
+    }
+    to {
+        transform: rotateY(-60deg) translate3d(0,0,200px);
+    }
+}
+
+
+@keyframes overviewDodgePauseAnimation {
+    from {
+        transform: rotateY(0) translate3d(0,0,0);
+    }
+    10% {
+        transform: rotateY(-45deg) translate3d(0,0,0);
+    }
+    40% {
+        transform: rotateY(-60deg) translate3d(0,0,340px);
+    }
+    to {
+        transform: rotateY(-60deg) translate3d(0,0,360px);
+    }
+}
+
+
 
 
