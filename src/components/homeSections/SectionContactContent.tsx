@@ -1,10 +1,20 @@
 import React from "react";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Container,
+  Grid,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const SectionContactContent: React.FC = () => {
+  const theme = useTheme();
+  const xsDown = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
     <>
       <Container
@@ -12,14 +22,22 @@ const SectionContactContent: React.FC = () => {
         sx={{
           position: "relative",
           top: "50vh",
+          width: "100%",
           transform: "translateY(-50%)",
         }}
       >
-        <Box className={"contactMe"} sx={{ px: "42px", py: "62px" }}>
+        <Box
+          className={"contactMe"}
+          sx={{ px: xsDown ? "16px" : "42px", py: xsDown ? "32px" : "62px" }}
+        >
           <Grid container>
             <Grid item xs={12}>
               <Typography
-                sx={{ fontSize: 42, color: "#1a385e", fontWeight: "bold" }}
+                sx={{
+                  fontSize: xsDown ? 32 : 42,
+                  color: "#1a385e",
+                  fontWeight: "bold",
+                }}
               >
                 CONTACT ME
               </Typography>
@@ -41,7 +59,11 @@ const SectionContactContent: React.FC = () => {
                 }}
               />
               <Typography
-                sx={{ fontSize: 28, color: "#1a385e", fontWeight: "bold" }}
+                sx={{
+                  fontSize: xsDown ? 22 : 28,
+                  color: "#1a385e",
+                  fontWeight: "bold",
+                }}
               >
                 yuriypyrih@gmail.com
               </Typography>
@@ -63,7 +85,11 @@ const SectionContactContent: React.FC = () => {
                 }}
               />
               <Typography
-                sx={{ fontSize: 28, color: "#1a385e", fontWeight: "bold" }}
+                sx={{
+                  fontSize: xsDown ? 22 : 28,
+                  color: "#1a385e",
+                  fontWeight: "bold",
+                }}
               >
                 Linkedin
               </Typography>
@@ -85,7 +111,11 @@ const SectionContactContent: React.FC = () => {
                 }}
               />
               <Typography
-                sx={{ fontSize: 28, color: "#1a385e", fontWeight: "bold" }}
+                sx={{
+                  fontSize: xsDown ? 22 : 28,
+                  color: "#1a385e",
+                  fontWeight: "bold",
+                }}
               >
                 GitHub
               </Typography>

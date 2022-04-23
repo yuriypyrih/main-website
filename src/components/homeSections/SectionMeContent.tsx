@@ -1,8 +1,18 @@
 import React from "react";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Container,
+  Grid,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import { ReactComponent as MeBackground } from "../../assets/svg/meSection.svg";
 
 const SectionMeContent: React.FC = () => {
+  const theme = useTheme();
+  const breakpointDown = useMediaQuery(theme.breakpoints.down(720));
+
   return (
     <>
       <MeBackground
@@ -11,19 +21,26 @@ const SectionMeContent: React.FC = () => {
           width: "100vw",
           height: "100%",
           opacity: 1,
-          fill: "red",
         }}
       />
-      <Container maxWidth={"lg"} sx={{ height: "100vh", position: "relative" }}>
+      <Container
+        maxWidth={"lg"}
+        sx={{
+          height: "100vh",
+          position: "relative",
+          backgroundColor: breakpointDown ? "#1a385e" : undefined,
+        }}
+      >
         <Box
           sx={{
             background: "white",
             borderRadius: 99,
-            position: "absolute",
-            top: "25%",
-            left: "5%",
-            width: 360,
-            height: 360,
+            position: breakpointDown ? "relative" : "absolute",
+            top: breakpointDown ? "50px" : "50%",
+            left: breakpointDown ? "50%" : "5%",
+            transform: breakpointDown ? "translateX(-50%)" : "translateY(-50%)",
+            width: breakpointDown ? "280px" : "360px",
+            height: breakpointDown ? "280px" : "360px",
             border: "10px solid #1a385e",
             boxShadow: "5px 5px 10px rgba(0,0,0,0.5)",
             overflow: "hidden",
@@ -32,7 +49,12 @@ const SectionMeContent: React.FC = () => {
           <img
             alt={"me"}
             src={"/assets/Me.jpg"}
-            style={{ width: 360, height: 360, objectFit: "cover" }}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              objectPosition: "center",
+            }}
           />
         </Box>
         <Grid
@@ -40,11 +62,13 @@ const SectionMeContent: React.FC = () => {
           justifyContent={"flex-end"}
           sx={{
             position: "relative",
-            width: "100%",
-            top: "calc(30vh + 100px)",
+            width: "90%",
+            left: "5%",
+            top: breakpointDown ? "80px" : "50%",
+            transform: breakpointDown ? undefined : "translateY(-50%)",
           }}
         >
-          <Grid item sx={{ maxWidth: "48%", pl: "calc(5vw + 20px)" }} container>
+          <Grid item xs={breakpointDown ? 12 : 5} container>
             <Grid item xs={12}>
               <Typography sx={{ color: "#ffeddf", fontSize: 20 }}>
                 {`Hello, my name is Yuriy Pyrih`}

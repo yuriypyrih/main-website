@@ -1,8 +1,17 @@
 import React, { useState } from "react";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Container,
+  Grid,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import { ReactComponent as OverviewSvg } from "../../assets/svg/overview-dodge.svg";
 
 const SectionDodgeOverview: React.FC = () => {
+  const theme = useTheme();
+  const breakpointDown = useMediaQuery(theme.breakpoints.down(800));
   const [overviewHovered, setOverviewHovered] = useState<boolean>(false);
 
   return (
@@ -14,22 +23,23 @@ const SectionDodgeOverview: React.FC = () => {
         justifyContent: "center",
       }}
       onMouseEnter={() => setOverviewHovered(true)}
-      id={"section-dodge-overview"}
     >
       <Container
+        id={"section-dodge-overview"}
         maxWidth={"lg"}
         sx={{
           position: "relative",
+          mb: "100px",
         }}
       >
         <Grid container spacing={2}>
           <Grid
             container
             item
-            xs={6}
+            xs={breakpointDown ? 12 : 6}
             flexDirection={"column"}
             justifyContent={"space-between"}
-            sx={{ pr: 2 }}
+            sx={{ pr: breakpointDown ? undefined : 2 }}
           >
             <Grid
               container
@@ -38,7 +48,14 @@ const SectionDodgeOverview: React.FC = () => {
               justifyContent={"flex-start"}
             >
               <Grid item>
-                <Typography sx={{ fontSize: 26, color: "white" }}>
+                <Typography
+                  sx={{
+                    fontSize: 26,
+                    color: "white",
+                    textAlign: breakpointDown ? "center" : "left",
+                    mb: 1,
+                  }}
+                >
                   Web Stack Tools
                 </Typography>
               </Grid>
@@ -86,7 +103,7 @@ const SectionDodgeOverview: React.FC = () => {
                   "&:hover span": { textDecoration: "underline" },
                 }}
               >
-                {`Github: `}
+                {`Source Code: `}
                 <span
                   style={{ color: "#2dd5c4", cursor: "pointer" }}
                   onClick={() =>
@@ -101,12 +118,13 @@ const SectionDodgeOverview: React.FC = () => {
               </Typography>
             </Grid>
           </Grid>
-          <Grid container xs={6} item>
+          <Grid container xs={breakpointDown ? 12 : 6} item>
             <Box
               id={"overviewFrame"}
               sx={{
                 position: "relative",
                 width: "100%",
+                mt: breakpointDown ? "40px" : undefined,
               }}
             >
               <OverviewSvg

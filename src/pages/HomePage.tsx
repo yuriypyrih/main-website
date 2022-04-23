@@ -9,11 +9,10 @@ import Footer from "../components/structure/Footer";
 
 const HomePage: React.FC = () => {
   return (
-    <Box>
+    <Box sx={{ backgroundColor: "#1a385e" }}>
       <Box
         id={"section-hero"}
         sx={{
-          backgroundColor: "#E0BBE4",
           height: "calc(200vh)",
           width: "100%",
           position: "relative",
@@ -22,7 +21,6 @@ const HomePage: React.FC = () => {
         <SectionHeroContent />
         <Box
           sx={{
-            // backgroundColor: "#957DAD",
             position: "absolute",
             minHeight: "100vh",
             width: "100%",
@@ -41,7 +39,6 @@ const HomePage: React.FC = () => {
       </Box>
       <Box
         sx={{
-          // backgroundColor: "#1a385e",
           backgroundImage: "linear-gradient(180deg, #1a385e, #115E84)",
           minHeight: "100vh",
         }}

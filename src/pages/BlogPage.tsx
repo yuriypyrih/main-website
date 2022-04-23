@@ -44,6 +44,7 @@ const BlogPage: React.FC = () => {
         container
         spacing={2}
         sx={{ cursor: "pointer", userSelect: "none" }}
+        justifyContent={xsDown ? "center" : "flex-start"}
       >
         <Grid item onClick={() => setTab(TABS.ALL)}>
           <Typography
@@ -114,14 +115,31 @@ const BlogPage: React.FC = () => {
               alignItems={"center"}
               sx={{ my: 2 }}
             >
-              <Grid item>{getFilterTags()}</Grid>
-              <Grid item>
-                <CustomSearchbar
-                  search={search}
-                  setSearch={setSearch}
-                  shrinkable
-                />
-              </Grid>
+              {xsDown ? (
+                <>
+                  <Grid item xs={12} container justifyContent={"flex-end"}>
+                    <CustomSearchbar
+                      search={search}
+                      setSearch={setSearch}
+                      shrinkable
+                    />
+                  </Grid>
+                  <Grid item xs={12} sx={{ mt: 2 }}>
+                    {getFilterTags()}
+                  </Grid>
+                </>
+              ) : (
+                <>
+                  <Grid item>{getFilterTags()}</Grid>
+                  <Grid item>
+                    <CustomSearchbar
+                      search={search}
+                      setSearch={setSearch}
+                      shrinkable
+                    />
+                  </Grid>
+                </>
+              )}
             </Grid>
             <Grid
               container

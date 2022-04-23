@@ -37,7 +37,12 @@ const SectionDodgeIntro: React.FC = () => {
         <Grid container sx={{ maxWidth: 800, margin: "0 auto" }}>
           <Grid item xs={12}>
             <Typography
-              sx={{ color: "white", fontSize: 18, textAlign: "center" }}
+              sx={{
+                color: "white",
+                fontSize: 18,
+                textAlign: "center",
+                lineHeight: 1.3,
+              }}
             >
               {`The Dodge is a passion project of mine which I was brewing for a while now.
                  It was an old Java experimentation that got completely rebooted using modern Web Stack

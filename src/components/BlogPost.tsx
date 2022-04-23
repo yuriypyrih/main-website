@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { format } from "date-fns";
 
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
@@ -17,6 +17,8 @@ type BlogPostProps = {
 const BlogPost: React.FC<BlogPostProps> = ({ mini = false, blog, assets }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  const theme = useTheme();
+  const xsDown = useMediaQuery(theme.breakpoints.down("sm"));
 
   const renderOptions = {
     renderNode: {
@@ -123,8 +125,10 @@ const BlogPost: React.FC<BlogPostProps> = ({ mini = false, blog, assets }) => {
         <Grid item xs={12}>
           {getImage()}
         </Grid>
-        <Grid item sx={{ mt: 3, mx: 3 }}>
-          <Typography sx={{ fontSize: mini ? 24 : 32, fontWeight: "bold" }}>
+        <Grid item sx={{ mt: 3, mx: xsDown ? 2 : 3 }}>
+          <Typography
+            sx={{ fontSize: mini || xsDown ? 24 : 32, fontWeight: "bold" }}
+          >
             {blog.fields?.title}
           </Typography>
         </Grid>
@@ -181,8 +185,8 @@ const BlogPost: React.FC<BlogPostProps> = ({ mini = false, blog, assets }) => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item sx={{ px: 3, minHeight: "72px" }}>
-          <Typography sx={{ fontSize: mini ? 16 : 18 }}>
+        <Grid item sx={{ px: xsDown ? 2 : 3, minHeight: "72px" }}>
+          <Typography sx={{ fontSize: mini || xsDown ? 16 : 18 }}>
             {blog.fields.description}
           </Typography>
         </Grid>
@@ -227,7 +231,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ mini = false, blog, assets }) => {
             <Grid
               item
               xs={12}
-              sx={{ mx: 3, mb: 1 }}
+              sx={{ mx: xsDown ? 2 : 3, mb: 1 }}
               className={"richContentClass"}
             >
               {documentToReactComponents(

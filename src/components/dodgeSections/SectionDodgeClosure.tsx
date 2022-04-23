@@ -1,8 +1,18 @@
 import React from "react";
-import { Box, Container, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Container,
+  Grid,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import { ReactComponent as DodgeClosureSvg } from "../../assets/svg/closure-dodge.svg";
 
 const SectionDodgeClosure: React.FC = () => {
+  const theme = useTheme();
+  const breakpointDown = useMediaQuery(theme.breakpoints.down(800));
+
   return (
     <Box
       sx={{
@@ -21,14 +31,22 @@ const SectionDodgeClosure: React.FC = () => {
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <Typography
-              sx={{ fontSize: 36, color: "white", textAlign: "center" }}
+              sx={{
+                fontSize: breakpointDown ? 30 : 36,
+                color: "white",
+                textAlign: "center",
+              }}
             >
               {`Last Words`}
             </Typography>
           </Grid>
           <Grid item xs={12}>
             <Typography
-              sx={{ fontSize: 18, color: "white", textAlign: "center" }}
+              sx={{
+                fontSize: breakpointDown ? 16 : 18,
+                color: "white",
+                textAlign: breakpointDown ? "left" : "center",
+              }}
             >
               {`This project is just a fun challenge for me that puts my creativity to the test. 
               It also serves as a playground to try new tools and discovering best development practices.
@@ -38,15 +56,12 @@ const SectionDodgeClosure: React.FC = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Grid container justifyContent={"center"}>
-          <Grid
-            item
-            sx={{ maxWidth: "700px", flex: 1, mt: "100px", mb: "200px" }}
-          >
-            <DodgeClosureSvg />
-          </Grid>
-        </Grid>
       </Container>
+      <Grid container justifyContent={"center"}>
+        <Grid item sx={{ maxWidth: "700px", flex: 1, my: "80px" }}>
+          <DodgeClosureSvg />
+        </Grid>
+      </Grid>
     </Box>
   );
 };
