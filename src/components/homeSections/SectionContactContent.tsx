@@ -97,10 +97,13 @@ const SectionContactContent: React.FC = () => {
             <Grid
               item
               xs={12}
-              sx={{ mt: 2 }}
+              sx={{ mt: 2, cursor: "pointer" }}
               container
               wrap={"nowrap"}
               alignItems={"center"}
+              onClick={() =>
+                window.open("https://github.com/yuriypyrih", "_blank")
+              }
             >
               <GitHubIcon
                 style={{

@@ -21,8 +21,14 @@ const SectionWorkContent: React.FC = () => {
       <Container maxWidth={"lg"} sx={{ py: "60px" }}>
         <Grid container>
           <Grid container item xs={12} spacing={2}>
-            <Grid item xs={breakpointDown ? 12 : 6} container>
-              <Grid item xs={12}>
+            <Grid
+              item
+              xs={breakpointDown ? 12 : 6}
+              container
+              direction={"column"}
+              justifyContent={"flex-start"}
+            >
+              <Grid item>
                 <Typography
                   sx={{
                     color: "#ffeddf",
@@ -33,33 +39,36 @@ const SectionWorkContent: React.FC = () => {
                   Work
                 </Typography>
               </Grid>
-              <Grid item xs={12} sx={{ mt: 1 }}>
+              <Grid item sx={{ mt: 1 }}>
                 <Typography
-                  sx={{ color: "#ffeddf", fontSize: xsDown ? 16 : 18 }}
+                  sx={{ color: "#ffeddf", fontSize: xsDown ? 16 : 20 }}
                 >
-                  {`I have worked on numerous applications from small passion projects such as the `}
-                  <span
-                    style={{
-                      color: "#2dd5c4",
-                      cursor: "pointer",
-                    }}
-                  >
-                    Dodge Project
-                  </span>
-                  {` to fully blown production scale deployments with thousands of users.`}
+                  {`I design, develop and deploy applications both for desktop and mobile. I have worked
+                   with organizations to deliver new products to the world.`}
                 </Typography>
               </Grid>
-              <Grid item xs={12} sx={{ mt: 1 }}>
+              <Grid item sx={{ mt: 1 }}>
                 <Typography
-                  sx={{ color: "#ffeddf", fontSize: xsDown ? 16 : 18 }}
+                  sx={{ color: "#ffeddf", fontSize: xsDown ? 16 : 20 }}
                 >
-                  {`You can learn more by checking my `}
+                  {`I'm fascinated with all sorts of software development but AR/XR and Game Dev 
+                   are the epitome of Interaction Design.`}
+                </Typography>
+              </Grid>
+              <Grid item sx={{ mt: 1 }}>
+                <Typography
+                  sx={{ color: "#ffeddf", fontSize: xsDown ? 16 : 20 }}
+                >
+                  {`More about my projects in my `}
                   <span
                     style={{
                       color: "#2dd5c4",
                       textDecoration: "underline",
                       cursor: "pointer",
                     }}
+                    onClick={() =>
+                      window.open("https://github.com/yuriypyrih", "_blank")
+                    }
                   >
                     GitHub Account
                   </span>
@@ -113,7 +122,7 @@ const SectionWorkContent: React.FC = () => {
               <Grid item xs={12} container spacing={0.5}>
                 <Grid item xs={12}>
                   <Typography
-                    sx={{ color: "#ffeddf", fontSize: xsDown ? 16 : 18 }}
+                    sx={{ color: "#ffeddf", fontSize: xsDown ? 16 : 20 }}
                   >
                     <span
                       style={{
@@ -127,7 +136,7 @@ const SectionWorkContent: React.FC = () => {
                 </Grid>
                 <Grid item xs={12}>
                   <Typography
-                    sx={{ color: "#ffeddf", fontSize: xsDown ? 16 : 18 }}
+                    sx={{ color: "#ffeddf", fontSize: xsDown ? 16 : 20 }}
                   >
                     <span
                       style={{
@@ -141,7 +150,7 @@ const SectionWorkContent: React.FC = () => {
                 </Grid>
                 <Grid item xs={12}>
                   <Typography
-                    sx={{ color: "#ffeddf", fontSize: xsDown ? 16 : 18 }}
+                    sx={{ color: "#ffeddf", fontSize: xsDown ? 16 : 20 }}
                   >
                     <span
                       style={{
@@ -155,7 +164,7 @@ const SectionWorkContent: React.FC = () => {
                 </Grid>
                 <Grid item xs={12}>
                   <Typography
-                    sx={{ color: "#ffeddf", fontSize: xsDown ? 16 : 18 }}
+                    sx={{ color: "#ffeddf", fontSize: xsDown ? 16 : 20 }}
                   >
                     <span
                       style={{
@@ -169,16 +178,16 @@ const SectionWorkContent: React.FC = () => {
                 </Grid>
                 <Grid item xs={12}>
                   <Typography
-                    sx={{ color: "#ffeddf", fontSize: xsDown ? 16 : 18 }}
+                    sx={{ color: "#ffeddf", fontSize: xsDown ? 16 : 20 }}
                   >
                     <span
                       style={{
                         color: "#2dd5c4",
                       }}
                     >
-                      OTHERS:
+                      OTHER:
                     </span>
-                    {" GDPR Proficiency, Excellent Planner, Good Communicator"}
+                    {" GDPR Proficiency, Excellent Planner & Communicator"}
                   </Typography>
                 </Grid>
               </Grid>

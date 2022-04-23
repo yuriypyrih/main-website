@@ -9,7 +9,7 @@ import Footer from "../components/structure/Footer";
 
 const HomePage: React.FC = () => {
   return (
-    <Box sx={{ backgroundColor: "#1a385e" }}>
+    <Box>
       <Box
         id={"section-hero"}
         sx={{
@@ -24,7 +24,8 @@ const HomePage: React.FC = () => {
             position: "absolute",
             minHeight: "100vh",
             width: "100%",
-            top: "100vh",
+            // top: "100vh",
+            bottom: 0,
           }}
           id={"section-me"}
         >

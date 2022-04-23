@@ -34,22 +34,22 @@ const SectionMeContent: React.FC = () => {
         <Box
           sx={{
             background: "white",
-            borderRadius: 99,
             position: breakpointDown ? "relative" : "absolute",
             top: breakpointDown ? "50px" : "50%",
             left: breakpointDown ? "50%" : "5%",
             transform: breakpointDown ? "translateX(-50%)" : "translateY(-50%)",
             width: breakpointDown ? "280px" : "360px",
             height: breakpointDown ? "280px" : "360px",
-            border: "10px solid #1a385e",
-            boxShadow: "5px 5px 10px rgba(0,0,0,0.5)",
-            overflow: "hidden",
+            backgroundColor: "transparent",
           }}
         >
           <img
             alt={"me"}
-            src={"/assets/Me.jpg"}
+            src={"/assets/me.png"}
             style={{
+              borderRadius: "100%",
+              // border: '4px solid',
+              boxShadow: "5px 5px 10px rgba(0,0,0,0.5)",
               width: "100%",
               height: "100%",
               objectFit: "cover",
@@ -76,15 +76,16 @@ const SectionMeContent: React.FC = () => {
             </Grid>
             <Grid item xs={12}>
               <Typography sx={{ color: "#ffeddf", fontSize: 20 }}>
-                {`and I am a `}
+                {`and I'm a `}
                 <span style={{ color: "#2dd5c4" }}>
                   Full Stack Web Developer
                 </span>
                 .
               </Typography>
             </Grid>
+
             <Grid item xs={12}>
-              <Typography sx={{ color: "#ffeddf", fontSize: 18 }}>
+              <Typography sx={{ color: "#ffeddf", fontSize: 20, mt: 1 }}>
                 {`I have a keen eye for Interactive Design as my passion is to bridge the realms of Reality and Imagination!`}
               </Typography>
             </Grid>

@@ -84,7 +84,9 @@ const SectionHeroContent: React.FC = () => {
                     textShadow: "2px 2px 5px black",
                   }}
                 >
-                  People ignore design that
+                  {xsDown
+                    ? "People ignore design"
+                    : "People ignore design that"}
                 </Typography>
                 <Typography
                   sx={{
@@ -94,7 +96,7 @@ const SectionHeroContent: React.FC = () => {
                     textShadow: "2px 2px 5px black",
                   }}
                 >
-                  ignores people
+                  {xsDown ? "that ignores people" : "ignores people"}
                 </Typography>
               </Box>
             </Grid>
