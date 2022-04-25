@@ -43,16 +43,16 @@ const SectionWorkContent: React.FC = () => {
                 <Typography
                   sx={{ color: "#ffeddf", fontSize: xsDown ? 16 : 20 }}
                 >
-                  {`I design, develop and deploy applications both for desktop and mobile. I have worked
-                   with organizations to deliver new products to the world.`}
+                  {`I design, develop and deploy applications both for desktop and mobile using cutting edge 
+                  software tools in order to deliver the best digital experience!`}
                 </Typography>
               </Grid>
               <Grid item sx={{ mt: 1 }}>
                 <Typography
                   sx={{ color: "#ffeddf", fontSize: xsDown ? 16 : 20 }}
                 >
-                  {`I'm fascinated with all sorts of software development but AR/XR and Game Dev 
-                   are the epitome of Interaction Design.`}
+                  {`I'm fascinated with all sorts of software development and my hobbies include
+                   AR/XR integrations and Game Dev.`}
                 </Typography>
               </Grid>
               <Grid item sx={{ mt: 1 }}>
