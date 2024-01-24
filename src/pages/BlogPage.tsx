@@ -7,15 +7,15 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import Header from "../components/structure/Header";
-import Footer from "../components/structure/Footer";
-import BlogPost from "../components/BlogPost";
+import Header from "components/structure/Header";
+import Footer from "components/structure/Footer";
+import BlogPost from "components/BlogPost";
 import { useDispatch, useSelector } from "react-redux";
-import { getBlogs } from "../redux/slices/appSlice";
-import { RootState } from "../redux/store";
-import CustomSearchbar from "../components/common/CustomSearchbar";
-import { useDebounce } from "../hooks/useDebounce";
-import DogeAd from "../components/DogeAd";
+import { getBlogs } from "redux/slices/appSlice";
+import { RootState } from "redux/store";
+import CustomSearchbar from "components/common/CustomSearchbar";
+import { useDebounce } from "hooks/useDebounce";
+import DogeAd from "components/DogeAd";
 
 enum TABS {
   ALL = "all",

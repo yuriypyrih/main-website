@@ -7,14 +7,14 @@ import {
   useMediaQuery,
   useTheme,
 } from "@mui/material";
-import Header from "../components/structure/Header";
-import Footer from "../components/structure/Footer";
-import BlogPost from "../components/BlogPost";
+import Header from "components/structure/Header";
+import Footer from "components/structure/Footer";
+import BlogPost from "components/BlogPost";
 import { useDispatch, useSelector } from "react-redux";
-import { RootState } from "../redux/store";
+import { RootState } from "redux/store";
 import { useNavigate, useParams } from "react-router-dom";
-import { getSingleBlog } from "../redux/slices/appSlice";
-import DogeAd from "../components/DogeAd";
+import { getSingleBlog } from "redux/slices/appSlice";
+import DogeAd from "components/DogeAd";
 
 const SingleBlogPage: React.FC = () => {
   const theme = useTheme();

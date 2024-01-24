@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Box,
   CircularProgress,
@@ -22,20 +22,75 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 type HeaderProps = {
   holographic?: boolean;
   fixed?: boolean;
+  unlocked?: boolean;
 };
+
+const mutations = [
+  "Secrets",
+  "Se#re!ts",
+  "S#*r$%ts",
+  "S&^r$@!Ts",
+  "Fr$^&*T$!",
+  "F%$!e^*D$s",
+  "F%&i#En$Ds",
+  "Fr!3nD$",
+  "Fr!3nDs",
+  "Friends",
+  "Friends",
+  "Friends",
+  "Friends",
+  "Friends",
+  "Friends",
+  "Friends",
+  "Friends",
+  "Friends",
+  "Friends",
+  "Friends",
+  "Friends",
+  "Friends",
+  "AFriends",
+  "Ab^Friends",
+  "Ab@ut Friends",
+  "About Friends",
+  "About Friends",
+  "About Friends",
+  "About Friends",
+  "About Friends",
+  "About Friends",
+  "About Friends",
+  "About Friends",
+  "About FE%s",
+  "About M$e",
+  "About Me",
+];
 
 const Header: React.FC<HeaderProps> = ({
   holographic = false,
   fixed = false,
+  unlocked,
 }) => {
   const navigate = useNavigate();
   const location = useLocation();
+  const [hasUnlocked, setHasUnlocked] = useState<boolean>(false);
+  const [secretTabName, setSecretTabName] = useState<string>(mutations[0]);
 
   const theme = useTheme();
   const xsDown = useMediaQuery(theme.breakpoints.down("sm"));
   const [drawer, setDrawer] = useState<boolean>(false);
 
   const { headerLoading } = useSelector((root: RootState) => root.app);
+
+  useEffect(() => {
+    if (unlocked && !hasUnlocked) {
+      setHasUnlocked(true);
+      const timeouts = mutations.map((mutation, index) =>
+        setTimeout(() => setSecretTabName(mutation), index * 75 + 1000)
+      );
+      return () => {
+        timeouts.every((t) => clearTimeout(t));
+      };
+    }
+  }, [hasUnlocked, unlocked]);
 
   const isActive = (path: string) => {
     return location.pathname.startsWith(path);
@@ -44,6 +99,7 @@ const Header: React.FC<HeaderProps> = ({
   const getTitle = () => {
     const path = location.pathname;
     if (path.startsWith("/Home")) return "Home";
+    else if (path.startsWith("/Secrets")) return "Secrets";
     else if (path.startsWith("/Blogs")) return "Dev Blogs";
     else if (path.startsWith("/Dodge")) return "DODGE PROJECT";
   };
@@ -70,7 +126,7 @@ const Header: React.FC<HeaderProps> = ({
             />
           </IconButton>
         </ListItem>
-        <ListItem button onClick={() => navigate("/Home")}>
+        <ListItem onClick={() => navigate("/Home")}>
           <Typography
             sx={{
               fontSize: "18px",
@@ -80,7 +136,17 @@ const Header: React.FC<HeaderProps> = ({
             {"HOME"}
           </Typography>
         </ListItem>
-        <ListItem button onClick={() => navigate("/Blogs")}>
+        <ListItem onClick={() => navigate("/Secrets")}>
+          <Typography
+            sx={{
+              fontSize: "18px",
+              color: isActive("/Blogs") ? "#2dd5c4" : "#ffeddf",
+            }}
+          >
+            {"Secrets"}
+          </Typography>
+        </ListItem>
+        <ListItem onClick={() => navigate("/Blogs")}>
           <Typography
             sx={{
               fontSize: "18px",
@@ -151,6 +217,20 @@ const Header: React.FC<HeaderProps> = ({
                   }}
                 >
                   Home
+                </Typography>
+              </Grid>
+              <Grid item onClick={() => navigate("/Secrets")}>
+                <Typography
+                  sx={{
+                    fontSize: 24,
+                    color: isActive("/Secrets") ? "#2dd5c4" : "#ffeddf",
+                    cursor: "pointer",
+                    "&:hover": {
+                      textShadow: "0 0 8px #2dd5c480",
+                    },
+                  }}
+                >
+                  {secretTabName}
                 </Typography>
               </Grid>
               <Grid item onClick={() => navigate("/Blogs")}>

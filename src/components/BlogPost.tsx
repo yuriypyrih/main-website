@@ -4,7 +4,7 @@ import { format } from "date-fns";
 
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import { BLOCKS } from "@contentful/rich-text-types";
-import { setSelectedBlog } from "../redux/slices/appSlice";
+import { setSelectedBlog } from "redux/slices/appSlice";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 

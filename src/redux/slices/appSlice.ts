@@ -4,6 +4,13 @@ import {
   getSingleBlogRequest,
 } from "../../lib/http/requests/blogs";
 
+export const QUIZ_KEY = "QUIZ_KEY";
+
+export type QuizObject = {
+  lockedSince: string | null;
+  solved: boolean;
+};
+
 export const getBlogs = createAsyncThunk(
   "app/getBlogs",
   async (params: { tab: string; search: string }, thunkAPI) => {
@@ -18,6 +25,18 @@ export const getBlogs = createAsyncThunk(
       console.log(error);
     } finally {
       thunkAPI.dispatch(setHeaderLoading(false));
+    }
+  }
+);
+
+export const setQuizObjectLocally = createAsyncThunk(
+  "app/setQuizObjectLocally",
+  async (params: QuizObject | null, thunkAPI) => {
+    try {
+      localStorage.setItem(QUIZ_KEY, JSON.stringify(params));
+      thunkAPI.dispatch(setQuizObject(params));
+    } catch (error) {
+      console.log(error);
     }
   }
 );
@@ -46,6 +65,7 @@ export interface AppState {
   blogs: any[];
   assets: any[];
   selectedBlog: null | any;
+  quizObject: QuizObject | null;
   toast: {
     open: boolean;
     text: string;
@@ -58,6 +78,7 @@ const initialState: AppState = {
   blogs: [],
   assets: [],
   selectedBlog: null,
+  quizObject: null,
   toast: {
     open: false,
     text: "",
@@ -80,6 +101,9 @@ export const appSlice = createSlice({
     setSelectedBlog: (state, action) => {
       state.selectedBlog = action.payload;
     },
+    setQuizObject: (state, action: PayloadAction<QuizObject | null>) => {
+      state.quizObject = action.payload;
+    },
     closeToast: (state) => {
       state.toast.open = false;
       state.toast.text = "";
@@ -101,7 +125,12 @@ export const appSlice = createSlice({
 });
 
 // Action creators are generated for each case reducer function
-export const { openToast, closeToast, setSelectedBlog, setHeaderLoading } =
-  appSlice.actions;
+export const {
+  setQuizObject,
+  openToast,
+  closeToast,
+  setSelectedBlog,
+  setHeaderLoading,
+} = appSlice.actions;
 
 export default appSlice.reducer;
